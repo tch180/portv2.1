@@ -40,7 +40,6 @@ class carousel extends Component {
     <li data-target="#projectcarousel" data-slide-to="1"></li>
     <li data-target="#projectcarousel" data-slide-to="2"></li>
     <li data-target="#projectcarousel" data-slide-to="3"></li>
-    <li data-target="#projectcarousel" data-slide-to="4"></li>
   </ol>
 
   {/* <!-- Wrapper for slides --> */}
@@ -58,7 +57,7 @@ class carousel extends Component {
       </div>
     </div>
     <div className="item">
-      <img src="https://i.imgur.com/YlQD5vN.png" alt="..."/>
+      <img src="https://i.imgur.com/JOX4Qyr.png" alt="..."/>
       <div className="carousel-caption">
        <h4> 2nd Chef</h4>
       </div>

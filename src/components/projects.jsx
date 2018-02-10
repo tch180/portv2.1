@@ -15,8 +15,9 @@ const ProjectSection = styled.div`
 `;
 
 const Project1Section = styled.div`
-margin-top: 70px;
 
+
+margin-top: 70px;
 background: rgb(56, 89,114);
 color: white;
 
@@ -27,18 +28,18 @@ img{
 }
 
 
-.clearfix {
-  overflow: auto;
-}
+// .clearfix {
+//   overflow: auto;
+// }
 
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-.element {
-  @include clearfix;
-}
+// .clearfix::after {
+//   content: "";
+//   clear: both;
+//   display: table;
+// }
+// .element {
+//   @include clearfix;
+// // 
 
 
 p {
@@ -68,7 +69,6 @@ Projectdescription {
 const Project2Section = styled.div`
 background: rgb(56, 89,114);
   color: white;
-// text-align: -webkit-center;
 
 img {
   float: right;
@@ -144,7 +144,7 @@ class projects extends Component {
 
          
             <Project1Section>
-              <section className="projects1">
+              {/* <section className="projects1"> */}
             
                 <img
                   src="https://i.imgur.com/a4m9H96.png"
@@ -162,7 +162,7 @@ class projects extends Component {
                   </h5>
                   <h4>Github: https://github.com/tch180/vagabond-project</h4>
                 </div>
-              </section>
+              
             </Project1Section>
           
 
@@ -183,7 +183,7 @@ class projects extends Component {
 
         <Project3Section>
         <div className="Projectdescription">
-        <img src="https://i.imgur.com/YlQD5vN.png?1" alt="2nd Chef " />
+        <img src="https://i.imgur.com/JOX4Qyr.png" alt="2nd Chef " />
               <p>2nd Chef</p>
               <h6>Stack: React on Rails </h6>
               <h5>Project Length: 6 days</h5>
