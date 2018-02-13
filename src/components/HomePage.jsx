@@ -1,26 +1,41 @@
 import React, { Component } from "react";
 import Carousel from "./carousel";
-import Contactme from "./contactme";
+// import Contactme from "./contactme";
 import Projects from "./projects";
-import ReactDOM from "react-dom";
+// import ReactDOM from "react-dom";
 import About from "./about";
 
 import styled from "styled-components";
 
 let Time = new Date().toLocaleString();
 
-const ProjectSection1Div = styled.div`
-  img {
-    display: flex;
+const BackToTopButton = styled.div`
+  #backtotop {
+    // display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
   }
-`;
-const AboutmeDiv = styled.div`
-background: rgb(56, 89,114);
-color: white;
-  font-size: 18px;
-`;
+  #backtotop:hover {
+    background: linear-gradient(rgb(56,89,114), rgb(0, 0, 0));
+
+  }
+
+`
+
 
 const NavbarDiv = styled.div`
+font-family: font-awesome;
+font-size: 25px;
 
 a:link {
   text-decoration:none;
@@ -36,7 +51,6 @@ a:visted {
 a:hover {
   text-decoration:underline;
   font-weight:bold;
-  // color: #fff;
 }
 a:active {
   text-decoration: underline;
@@ -46,18 +60,15 @@ a:active {
   
   a.navbar-brand {
    
-    background-image: url("https://i.imgur.com/2hK7jsVt.jpg");
 
   }
 
   .navbar {
-    background: rgb(56, 89,114);
+    background: linear-gradient(rgb(56,89,114), rgb(0, 0, 0));
     color:white;
-    // background-image: url(https://i.imgur.com/xVhHp95.jpg);
 
     
   }
-
   ul {
     text-align: right;
     display: flex;
@@ -65,23 +76,15 @@ a:active {
     text-decoration-color: white;
     color: floralwhite;
   }
-
   h1 {
     color: white;
-
   }
- 
-h4 {
-    
+h4 {   
   white-space: nowrap;
   animation: type 15s steps(180, end);
   overflow: hidden;
   width: 60em;
-
-  
-
 }
-
 @keyframes type{
 
    from {width: 0;}
@@ -89,12 +92,23 @@ h4 {
 }
 
 `;
-
 class HomePage extends Component {
+
+
+
+
+
+  BackToTopButton() {
+   console.log("Clicked button")
+  }
+
+
   render() {
+    
     return (
       <div>
-        {/* ///////////////
+
+     {/* ///////////////
         //Navbar
         /////////////// */}
         <div>
@@ -110,11 +124,11 @@ class HomePage extends Component {
                   <h6>{Time}</h6>
                   <ul>
                     <a href="#projects">
-                      <ol>Projects</ol>{" "}
+                      <ol>Projects</ol>
                     </a>
                     <ol>Resume</ol>
                     <a href="#about">
-                      {" "}
+                      
                       <ol>About </ol>
                     </a>
                   </ul>
@@ -129,11 +143,11 @@ class HomePage extends Component {
                 </div>
               </nav>
             </div>
-            <h1 />
+            
           </NavbarDiv>
         </div>
 
-        {/* ///////////////
+{/* ///////////////
 //Projects 
 /////////////// */}
 
@@ -144,25 +158,26 @@ class HomePage extends Component {
         <section>
           <div>
             <a name="projects" />
-            <ProjectSection1Div>
+            {/* <ProjectSection1Div> */}
               <Projects />
-            </ProjectSection1Div>
+            {/* </ProjectSection1Div> */}
           </div>
         </section>
 
-        {/* ///////////////
+{/* ///////////////
 //About 
 /////////////// */}
         <a name="about" />
         <div className="aboutme">
-          <AboutmeDiv>
             <About />
-          </AboutmeDiv>
         </div>
 
         <i className="fab fa-js" />
         <i className="fab fa-github" />
         <i className="fab fa-react" />
+<BackToTopButton>
+        <button  onClick={BackToTopButton}></button>
+        </BackToTopButton>
       </div>
     );
   }

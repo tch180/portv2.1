@@ -7,15 +7,15 @@ import styled from "styled-components";
 
 const Carouseldiv=styled.div`
 
-padding-bottom: 25px;
-padding-top: 25px;
-padding-right: 10px;
-padding-left: 10px;
-background-color: black;
+// padding-bottom: 25px;
+// padding-top: 25px;
+// padding-right: 10px;
+// padding-left: 10px;
+// background-color: black;
 
-.style{
-  background-color: black;
-}
+// .style{
+//   background-color: black;
+// }
 
 
 `
@@ -31,25 +31,20 @@ class carousel extends Component {
             <div>
 
 
-<Carouseldiv>
+{/* <Carouseldiv> */}
               
-                <div id="projectcarousel" className="carousel slide" data-ride="carousel" data-interval="5000"  data-pause="hover"  >
+                <div id="projectcarousel" className="carousel slide" data-ride="carousel" data-interval="3500"  >
  {/* <!-- Indicators --> */}
   <ol className="carousel-indicators">
     <li data-target="#projectcarousel" data-slide-to="0" className="active"></li>
-    <li data-target="#projectcarousel" data-slide-to="1"></li>
+    <li data-target="#projectcarousel" data-slide-to="1" ></li>
     <li data-target="#projectcarousel" data-slide-to="2"></li>
-    <li data-target="#projectcarousel" data-slide-to="3"></li>
+    {/* <li data-target="#projectcarousel" data-slide-to="3"></li> */}
   </ol>
 
   {/* <!-- Wrapper for slides --> */}
   <div className="carousel-inner" role="listbox">
-    <div className="item">
-      <img src="https://i.imgur.com/NCTOjV4.jpg" alt="Cutting Board"/>
-      <div className="carousel-caption">
-        <h1>Best Chef</h1>
-      </div>
-    </div>
+   
     <div className="item active">
       <img src="https://i.imgur.com/vbBa1ps.png" alt="..."/>
       <div className="carousel-caption">
@@ -80,7 +75,7 @@ class carousel extends Component {
     <span className="sr-only">Next</span>
   </a>
 </div>
-</Carouseldiv>
+{/* </Carouseldiv> */}
             </div>
         );
     }

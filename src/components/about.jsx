@@ -2,18 +2,23 @@ import React, { Component } from 'react';
 import styled from "styled-components";
 
 
-const Aboutme = styled.div`
 
-h4 {
+const Aboutme = styled.div`
+background: rgb(56, 89,114);
+color: white;
+  font-size: 28px;
+  clear: both;
+  h4 {
     text-align: center;
 }
 img {
-    self-align:center;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid black;
+    border-radius: 15px;
 }
 
-
-`
-
+`;
 
 
 
