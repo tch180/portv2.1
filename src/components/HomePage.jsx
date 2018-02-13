@@ -9,34 +9,38 @@ import styled from "styled-components";
 
 let Time = new Date().toLocaleString();
 
-const BackToTopButton = styled.div`
-  #backtotop {
-    // display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: red; /* Set a background color */
-    color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
-    font-size: 18px; /* Increase font size */
-  }
-  #backtotop:hover {
+const ToTopButton = styled.div`
+
+    // display: none;
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: none;
+    outline: none;
+    background-color: red; 
+    color: white; 
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 10px; 
+    font-size: 18px; 
+
     background: linear-gradient(rgb(56,89,114), rgb(0, 0, 0));
 
-  }
+
 
 `
+const HomePageStlye = styled.div`
+background: linear-gradient(rgb(56,89,114), rgb(0, 0, 0));
 
+
+
+`
 
 const NavbarDiv = styled.div`
 font-family: font-awesome;
 font-size: 25px;
-
+background: linear-gradient(rgb(56,89,114), rgb(0, 0, 0));
 a:link {
   text-decoration:none;
   font-weight: bold;
@@ -94,12 +98,17 @@ h4 {
 `;
 class HomePage extends Component {
 
+ 
 
 
+  BackToTopButton = async () => {
+    try {
+      console.log("Clicked button");
 
-
-  BackToTopButton() {
-   console.log("Clicked button")
+    } catch (error) {
+      console.log(error);
+      
+    }
   }
 
 
@@ -111,6 +120,7 @@ class HomePage extends Component {
      {/* ///////////////
         //Navbar
         /////////////// */}
+        <HomePageStlye>
         <div>
           <NavbarDiv>
             <div className="Navbar">
@@ -118,7 +128,7 @@ class HomePage extends Component {
                 <div className="container-fluid">
                   <div className="navbar-header ">
                     {/* <img src="" alt="BrandLogo" /> */}
-                    <a className="navbar-brand" href="/HomePage" />
+                    {/* <a className="navbar-brand" href="/HomePage" /> */}
                   </div>
                   <h1>Tory Redner </h1>
                   <h6>{Time}</h6>
@@ -175,9 +185,10 @@ class HomePage extends Component {
         <i className="fab fa-js" />
         <i className="fab fa-github" />
         <i className="fab fa-react" />
-<BackToTopButton>
-        <button  onClick={BackToTopButton}></button>
-        </BackToTopButton>
+        <ToTopButton>
+        <button className="ToTopButton " onClick={this.BackToTopButton}  >Top</button> 
+        </ToTopButton>
+        </HomePageStlye>
       </div>
     );
   }

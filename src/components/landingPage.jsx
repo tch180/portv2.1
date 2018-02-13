@@ -4,8 +4,7 @@ import styled from "styled-components";
 
 
 const WelcomepageDiv = styled.div`
-background-image: url()
-background-color:black;
+background: linear-gradient(rgb(56,89,114), rgb(0, 0, 0));
 color: blue:
 text-align: center;
 height: 100vh;

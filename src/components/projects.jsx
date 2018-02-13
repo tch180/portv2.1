@@ -3,8 +3,9 @@ import styled from "styled-components";
 
 const ProjectSection = styled.div`
 
-background: rgb(56, 89,114);
-  color: white;
+
+// background: linear-gradient(rgb(56,89,114), rgb(0, 0, 0));  
+color: white;
   text-align: center;
 
 
@@ -14,13 +15,14 @@ background: rgb(56, 89,114);
     flex-direction: row;
     justify-content: space-evenly;
     padding-top: 55px;
+    // background: linear-gradient(rgb(56,89,114), rgb(0, 0, 0));
   }
 
 
     .thumbnail{
-      background-color: black;
-      // width: 30;
+      // background: linear-gradient(rgb(56,89,114), rgb(0, 0, 0));      // width: 30;
       margin:auto;
+      background-color: black;
 
     }
     .thumbnail .caption {

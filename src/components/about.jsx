@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 
 const Aboutme = styled.div`
-background: rgb(56, 89,114);
+// background: linear-gradient(rgb(56,89,114), rgb(0, 0, 0));
 color: white;
   font-size: 28px;
   clear: both;

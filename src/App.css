@@ -28,6 +28,5 @@
 }
 
 .body {
-  background: rgb(56, 89,114);
-
+  background: linear-gradient(rgb(56,89,114), rgb(0, 0, 0));
 }
