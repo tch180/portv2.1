@@ -15,12 +15,11 @@ const ToTopButton = styled.div`
     position: fixed; 
     bottom: 20px; 
     right: 30px; 
-    z-index: 99; 
-    border: none;
-    outline: none;
-    background-color: red; 
-    color: white; 
-    cursor: pointer; 
+    // z-index: 99; 
+    // border: none;
+    // outline: none;
+    // color: white; 
+    // cursor: pointer; 
     padding: 15px; 
     border-radius: 10px; 
     font-size: 18px; 
@@ -97,22 +96,42 @@ h4 {
 
 `;
 class HomePage extends Component {
+constructor(){
+  super();
+  this.state= {
+    intervalId: 0
+  };
+}
 
- 
+// scrollStep() {
+//   if (window.pageYOffset === 0) {
+//       clearInterval(this.state.intervalId);
+//   }
+//   window.scroll(0, window.pageYOffset - this.props.scrollStepInPx);
+// };
 
+// scrollToTop() {
+//   let intervalId = setInterval(this.scrollStep.bind(this), this.props.delayInMs);
+//   this.setState({ intervalId: intervalId });
+// }
 
-  BackToTopButton = async () => {
-    try {
-      console.log("Clicked button");
+   backToTopButton = async () => {
+     try {
+    if (window.pageYOffset === 0) {
+      clearInterval(this.state.intervalId);
+  }
+  window.scroll(0, window.pageYOffset - this.props.scrollStepInPx);
+       console.log("Clicked button");
 
     } catch (error) {
-      console.log(error);
+       console.log(error);
       
-    }
-  }
+     }
+   }
 
 
   render() {
+    
     
     return (
       <div>
@@ -186,7 +205,7 @@ class HomePage extends Component {
         <i className="fab fa-github" />
         <i className="fab fa-react" />
         <ToTopButton>
-        <button className="ToTopButton " onClick={this.BackToTopButton}  >Top</button> 
+        <button className="ToTopButton  " onClick={this.backToTopButton}  ><i className="fas fa-angle-double-up"></i></button> 
         </ToTopButton>
         </HomePageStlye>
       </div>
