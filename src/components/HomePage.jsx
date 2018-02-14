@@ -117,7 +117,7 @@ constructor(){
 
    backToTopButton = async () => {
      try {
-    if (window.pageYOffset === 0) {
+     if(window.pageYOffset === 0) {
       clearInterval(this.state.intervalId);
   }
   window.scroll(0, window.pageYOffset - this.props.scrollStepInPx);
