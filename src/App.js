@@ -11,16 +11,14 @@ class App extends Component {
     return (
       <div>
         <HashRouter>
-          <div>
-            <Switch>
+          
+         <Switch>
             <Route exact path='/' component={HomePage}/>
             <Route exact path='/HomePage' component={HomePage}/>
             <Route exact path='/contact' component={contactme}/>
             <Route exact path='/about' component={about}/>
-              
-              
-            </Switch>
-            </div>
+         </Switch>
+            
         </HashRouter>
    </div>
     );
