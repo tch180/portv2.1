@@ -95,7 +95,10 @@ h4 {
 }
 
 `;
+
+
 class HomePage extends Component {
+  
 constructor(){
   super();
   this.state= {
@@ -156,7 +159,7 @@ constructor(){
                       <ol>Projects</ol>
                     </a>
                     <ol>Resume</ol>
-                    <a href="#about">
+                    <a href=".about">
                       
                       <ol>About </ol>
                     </a>
