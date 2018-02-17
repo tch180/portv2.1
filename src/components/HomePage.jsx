@@ -4,6 +4,8 @@ import Carousel from "./carousel";
 import Projects from "./projects";
 // import ReactDOM from "react-dom";
 import About from "./about";
+// import {Link} from 'react-router-dom'
+import { HashLink as Link } from 'react-router-hash-link';
 
 import styled from "styled-components";
 
@@ -15,7 +17,7 @@ const ToTopButton = styled.div`
     position: fixed; 
     bottom: 20px; 
     right: 30px; 
-    // z-index: 99; 
+    z-index: 99; 
     // border: none;
     // outline: none;
     // color: white; 
@@ -106,16 +108,14 @@ constructor(){
   };
 }
 
-// scrollStep() {
-//   if (window.pageYOffset === 0) {
-//       clearInterval(this.state.intervalId);
-//   }
-//   window.scroll(0, window.pageYOffset - this.props.scrollStepInPx);
-// };
+// scrollToSection = async(e)=> {
+//   let nav
+//   e.preventDefault();
+//   let section = (this).attr("href");
+//   $("html, body").animate({
+//       scrollTop: $(section).offset().top
+//   });
 
-// scrollToTop() {
-//   let intervalId = setInterval(this.scrollStep.bind(this), this.props.delayInMs);
-//   this.setState({ intervalId: intervalId });
 // }
 
    backToTopButton = async () => {
@@ -155,14 +155,10 @@ constructor(){
                   <h1>Tory Redner </h1>
                   <h6>{Time}</h6>
                   <ul>
-                    <a href="#projects">
-                      <ol>Projects</ol>
-                    </a>
+                    <Link to="/HomePage#about"> <ol>Projects</ol></Link>
                     <ol>Resume</ol>
-                    <a href=".about">
-                      
-                      <ol>About </ol>
-                    </a>
+                    <ol>About </ol>
+                    
                   </ul>
                   <h4>
                     "The average person puts only 25% of his energy into his
@@ -188,8 +184,7 @@ constructor(){
         </section>
 
         <section>
-          <div>
-            <a name="projects" />
+          <div id="#Projects"> 
             {/* <ProjectSection1Div> */}
               <Projects />
             {/* </ProjectSection1Div> */}
@@ -208,7 +203,7 @@ constructor(){
         <i className="fab fa-github" />
         <i className="fab fa-react" />
         <ToTopButton>
-        <button className="ToTopButton  " onClick={this.backToTopButton}  ><i className="fas fa-angle-double-up"></i></button> 
+        <button className="ToTopButton btn-success  " onClick={this.backToTopButton}  ><span><i className="fas fa-angle-double-up"></i></span></button> 
         </ToTopButton>
         </HomePageStlye>
       </div>
