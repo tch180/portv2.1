@@ -47,7 +47,7 @@ class carousel extends Component {
     <div className="item">
       <img src="https://i.imgur.com/NCTOjV4.jpg" alt="Cutting Board"/>
       <div className="carousel-caption">
-        <h1>Best Chef</h1>
+        {/* <h1>Best Chef</h1>  */}
       </div>
     </div>
     <div className="item active">
