@@ -29,6 +29,10 @@ img {
 
 
 class AboutMe extends Component {
+
+
+
+    
     render() {
 
 
@@ -39,7 +43,7 @@ class AboutMe extends Component {
             <div>
             <Aboutme>
 
-                <img src="https://i.imgur.com/ItnSLBas.jpg" alt="picture of me"/>
+                <img src="https://i.imgur.com/ItnSLBas.jpg" alt="pictureofme"/>
                 <h4>Tory Redner</h4>
                 <h5>Web Developer</h5>
                 <h5>I grew up with a facination and love of computers, I can still remember the first computer that I had was a 386.<br/>
