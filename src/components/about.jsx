@@ -41,6 +41,7 @@ class AboutMe extends Component {
 
                 <img src="https://i.imgur.com/ItnSLBas.jpg" alt="picture of me"/>
                 <h4>Tory Redner</h4>
+                <h5>Web Developer</h5>
                 <h5>I grew up with a facination and love of computers, I can still remember the first computer that I had was a 386.<br/>
                  My dad would bring them home from his job broken or in desperate need of repair, It was then that I learned about the 30+ A disk that you needed to install windows 95.
                  Fast forward some years and while I still had a love of all things tech, I decided to pursue my career as a chef and Attened Johnson & Wales University. I had a passion for cooking
