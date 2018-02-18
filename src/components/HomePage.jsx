@@ -14,7 +14,7 @@ let Time = new Date().toLocaleString();
 const ToTopButton = styled.div`
 
     // display: none;
-    position: fixed; 
+     position: fixed; 
     bottom: 20px; 
     right: 30px; 
     z-index: 99; 
@@ -22,7 +22,7 @@ const ToTopButton = styled.div`
     // outline: none;
     // color: white; 
     // cursor: pointer; 
-    padding: 15px; 
+    padding: 8px; 
     border-radius: 10px; 
     font-size: 18px; 
 
@@ -134,14 +134,22 @@ constructor(){
 
 
   render() {
-    
-    
     return (
-      <div>
+
+
+
+
+
+
+  <div>
 
      {/* ///////////////
         //Navbar
         /////////////// */}
+
+
+
+
         <HomePageStlye>
         <div>
           <NavbarDiv>
@@ -155,9 +163,9 @@ constructor(){
                   <h1>Tory Redner </h1>
                   <h6>{Time}</h6>
                   <ul>
-                    <Link to="/HomePage#about"> <ol>Projects</ol></Link>
+                    <Link to="/HomePage#projects"> <ol>Projects</ol></Link>
                     <ol>Resume</ol>
-                    <ol>About </ol>
+                    <Link to="/HomePage#aboutme">  <ol>About </ol></Link>
                     
                   </ul>
                   <h4>
@@ -171,20 +179,19 @@ constructor(){
                 </div>
               </nav>
             </div>
-            
           </NavbarDiv>
         </div>
 
-{/* ///////////////
+{/*///////////////
 //Projects 
-/////////////// */}
+///////////////*/}
 
         <section className="carousel">
           <Carousel />
         </section>
 
         <section>
-          <div id="#Projects"> 
+          <div id="projects"> 
             {/* <ProjectSection1Div> */}
               <Projects />
             {/* </ProjectSection1Div> */}
@@ -194,17 +201,23 @@ constructor(){
 {/* ///////////////
 //About 
 /////////////// */}
-        <a name="about" />
-        <div className="aboutme">
+        <div id="aboutme">
             <About />
-        </div>
-
+        <i classname="fas fa-code-branch"/>
         <i className="fab fa-js" />
         <i className="fab fa-github" />
         <i className="fab fa-react" />
+        <i className="fas fa-code"/>
+        </div>
+       
+      
         <ToTopButton>
         <button className="ToTopButton btn-success  " onClick={this.backToTopButton}  ><span><i className="fas fa-angle-double-up"></i></span></button> 
         </ToTopButton>
+
+
+
+
         </HomePageStlye>
       </div>
     );

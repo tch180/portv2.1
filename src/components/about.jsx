@@ -6,15 +6,21 @@ import styled from "styled-components";
 const Aboutme = styled.div`
 // background: linear-gradient(rgb(56,89,114), rgb(0, 0, 0));
 color: white;
-  font-size: 28px;
+  font-size: 48px;
   clear: both;
-  h4 {
+  h4  {
     text-align: center;
+    font-size: 48px;
+}
+h5 {
+    font-size: 28px;
+    text-align: center;
+
 }
 img {
     display: block;
     margin: 0 auto;
-    border: 2px solid black;
+    border: 5px solid white; 
     border-radius: 15px;
 }
 

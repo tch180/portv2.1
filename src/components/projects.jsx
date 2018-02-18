@@ -7,6 +7,7 @@ const ProjectSection = styled.div`
 // background: linear-gradient(rgb(56,89,114), rgb(0, 0, 0));  
 color: white;
   text-align: center;
+  font-family: font-awesome;
 
 
 
@@ -20,7 +21,8 @@ color: white;
 
 
     .thumbnail{
-      // background: linear-gradient(rgb(56,89,114), rgb(0, 0, 0));      // width: 30;
+      // background: linear-gradient(rgb(56,89,114), rgb(0, 0, 0));      
+      // width: 30;
       margin:auto;
       background-color: black;
 
@@ -29,7 +31,13 @@ color: white;
       color:white;
       font-family: font-awesome;
   }
+ #projectDesc{
+   
+    justify-content: space-around;
+    display: flex;
+   
 
+ }
   
 `;
 
@@ -54,10 +62,6 @@ class projects extends Component {
         <ProjectSection>
         <div className="container-fluid">
 
-            
-
-
-         
 
 
 
@@ -72,7 +76,13 @@ class projects extends Component {
                       <p>This was our first group project, The groups consisted of 4
                                   people. We worked in mob & pair programming.This Application
                     allows the user to post reviews to each city,<br /> it allows
-                    images to be uploaded and has vaildation.</p>
+                    images to be uploaded and has vaildation.
+                    <div id="projectDesc">
+                    <img src="https://i.imgur.com/VFzLKpXt.png" alt=""/>
+                    <img src="https://i.imgur.com/xAjKvjCt.png" alt=""/>
+                    <img src="https://i.imgur.com/vrGXcCut.png" alt=""/>
+                    </div>
+                    </p>
                       <p><a href="https://github.com/tch180/vagabond-project-" className="btn btn-primary" role="button">Github</a> <a href="https://wdi12-vagabond-travel.herokuapp.com/" className="btn btn-success" role="button">Demo</a></p>
                     </div>
                   </div>
@@ -91,7 +101,13 @@ class projects extends Component {
                       <h5>Project Length: 7 Days</h5>
                       <p> One of my favorite projects, This allows parents to add children
                 and Assign chores that are equated an point value. In version 2
-                the child will be able to turn those points in for rewards.</p>
+                the child will be able to turn those points in for rewards. 
+                    <div id="projectDesc">
+                    <img src="https://i.imgur.com/RdrLkZtt.png" alt=""/>
+                    <img src="https://i.imgur.com/5MMTB4It.png" alt=""/>
+                    <img src="https://i.imgur.com/Q0MI6LLt.png" alt=""/>
+                    </div>
+                    </p>
                       <p><a href="https://github.com/tch180/bigstar-chores" className="btn btn-primary" role="button">Github</a> <a href="https://bigstar-chores.herokuapp.com/" className="btn btn-success" role="button">Demo</a></p>
                     </div>
                   </div>
@@ -112,17 +128,21 @@ class projects extends Component {
                       <h5>Project Length: 6 days</h5>
                       <p>  Imagine if you always had a chef on call, to cook for you you
                 when ever you wanted. birthdays partys Small - Medium size
-                catering.</p>
+                catering.
+                <div id="projectDesc">
+                    <img src="https://i.imgur.com/Wrpejett.png" alt=""/>
+                    <img src="https://i.imgur.com/smj30UPt.png" alt=""/>
+                    <img src="https://i.imgur.com/dY4NoOot.png" alt=""/>
+                    </div>
+                    </p>
                       <p><a href="https://github.com/tch180/Project-3" className="btn btn-primary" role="button">Github</a> <a href="https://second-chefs.herokuapp.com/" className="btn btn-success" role="button">Demo</a></p>
                     </div>
                   </div>
                 </div>
-             </div>
-            
 
 
 
-
+          </div>
         </div>
 
         </ProjectSection>
