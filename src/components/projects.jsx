@@ -35,6 +35,7 @@ color: white;
    
     justify-content: space-around;
     display: flex;
+    margin-bottom: 25px;
    
 
  }
@@ -76,13 +77,13 @@ class projects extends Component {
                       <p>This was our first group project, The groups consisted of 4
                                   people. We worked in mob & pair programming.This Application
                     allows the user to post reviews to each city,<br /> it allows
-                    images to be uploaded and has vaildation.
+                    images to be uploaded and has vaildation.</p>
                     <div id="projectDesc">
                     <img src="https://i.imgur.com/VFzLKpXt.png" alt=""/>
                     <img src="https://i.imgur.com/xAjKvjCt.png" alt=""/>
                     <img src="https://i.imgur.com/vrGXcCut.png" alt=""/>
                     </div>
-                    </p>
+                    
                       <p><a href="https://github.com/tch180/vagabond-project-" className="btn btn-primary" role="button">Github</a> <a href="https://wdi12-vagabond-travel.herokuapp.com/" className="btn btn-success" role="button">Demo</a></p>
                     </div>
                   </div>
@@ -101,13 +102,13 @@ class projects extends Component {
                       <h5>Project Length: 7 Days</h5>
                       <p> One of my favorite projects, This allows parents to add children
                 and Assign chores that are equated an point value. In version 2
-                the child will be able to turn those points in for rewards. 
+                the child will be able to turn those points in for rewards.    </p>
                     <div id="projectDesc">
                     <img src="https://i.imgur.com/RdrLkZtt.png" alt=""/>
                     <img src="https://i.imgur.com/5MMTB4It.png" alt=""/>
                     <img src="https://i.imgur.com/Q0MI6LLt.png" alt=""/>
                     </div>
-                    </p>
+                 
                       <p><a href="https://github.com/tch180/bigstar-chores" className="btn btn-primary" role="button">Github</a> <a href="https://bigstar-chores.herokuapp.com/" className="btn btn-success" role="button">Demo</a></p>
                     </div>
                   </div>
@@ -128,13 +129,13 @@ class projects extends Component {
                       <h5>Project Length: 6 days</h5>
                       <p>  Imagine if you always had a chef on call, to cook for you you
                 when ever you wanted. birthdays partys Small - Medium size
-                catering.
+                catering.     </p>
                 <div id="projectDesc">
                     <img src="https://i.imgur.com/Wrpejett.png" alt=""/>
                     <img src="https://i.imgur.com/smj30UPt.png" alt=""/>
                     <img src="https://i.imgur.com/dY4NoOot.png" alt=""/>
                     </div>
-                    </p>
+               
                       <p><a href="https://github.com/tch180/Project-3" className="btn btn-primary" role="button">Github</a> <a href="https://second-chefs.herokuapp.com/" className="btn btn-success" role="button">Demo</a></p>
                     </div>
                   </div>

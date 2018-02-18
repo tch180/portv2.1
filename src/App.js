@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { HashRouter,  Route, Link, Switch } from 'react-router-dom';
+import { HashRouter,  Route,  Switch } from 'react-router-dom';
 import HomePage from './components/HomePage';
-import contactme from './components/contactme';
+// import contactme from './components/contactme';
 import about from './components/about';
 
 class App extends Component {
