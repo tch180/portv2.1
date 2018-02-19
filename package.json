@@ -1,0 +1,27 @@
+{
+  "name": "portv2",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://tch180.github.io/portv2.1",
+  "dependencies": {
+    "gh-pages": "^1.1.0",
+    "react": "^16.2.0",
+    "react-clock": "^2.2.0",
+    "react-dom": "^16.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-router-hash-link": "^1.1.1",
+    "react-scripts": "1.1.0",
+    "styled-components": "^3.1.5"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "npm run build&&gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.1.0"
+  }
+}
