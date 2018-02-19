@@ -24,7 +24,6 @@ const ToTopButton = styled.div`
     border-radius: 10px; 
     font-size: 18px; 
 
-    background: linear-gradient(rgb(56,89,114), rgb(0, 0, 0));
 
 
 
@@ -234,7 +233,7 @@ constructor(){
        
       
         <ToTopButton>
-        <button className="ToTopButton btn-success  " onClick={this.backToTopButton}  ><span><i className="fas fa-angle-double-up"></i></span></button> 
+        <button className="ToTopButton btn-success btn-sm  " onClick={this.backToTopButton}  ><span><i className="fas fa-angle-double-up"></i></span></button> 
         </ToTopButton>
 
 
