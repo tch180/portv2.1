@@ -2,9 +2,7 @@ import React, { Component } from "react";
 import Carousel from "./carousel";
 // import Contactme from "./contactme";
 import Projects from "./projects";
-// import ReactDOM from "react-dom";
 import About from "./about";
-// import {Link} from 'react-router-dom'
 import { HashLink as Link } from 'react-router-hash-link';
 
 import styled from "styled-components";
@@ -14,14 +12,14 @@ let Time = new Date().toLocaleString();
 const ToTopButton = styled.div`
 
     // display: none;
-     position: fixed; 
+     position: sticky; 
     bottom: 20px; 
     right: 30px; 
-    z-index: 99; 
-    // border: none;
-    // outline: none;
-    // color: white; 
-    // cursor: pointer; 
+    z-index: 100; 
+    border: none;
+    outline: none;
+    color: white; 
+    cursor: pointer; 
     padding: 8px; 
     border-radius: 10px; 
     font-size: 18px; 
@@ -34,6 +32,42 @@ const ToTopButton = styled.div`
 const HomePageStlye = styled.div`
 background: linear-gradient(rgb(56,89,114), rgb(0, 0, 0));
 
+@media only screen and (max-width: 900px) {
+  /* For mobile phones: */
+  [class*="col-md"] {
+      // width: 100%;
+
+      .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+}
 
 
 `
@@ -108,23 +142,15 @@ constructor(){
   };
 }
 
-// scrollToSection = async(e)=> {
-//   let nav
-//   e.preventDefault();
-//   let section = (this).attr("href");
-//   $("html, body").animate({
-//       scrollTop: $(section).offset().top
-//   });
 
-// }
 
    backToTopButton = async () => {
      try {
      if(window.pageYOffset === 0) {
       clearInterval(this.state.intervalId);
-  }
+  } 
   window.scroll(0, window.pageYOffset - this.props.scrollStepInPx);
-       console.log("Clicked button");
+       console.log("Clicked Button");
 
     } catch (error) {
        console.log(error);
@@ -203,11 +229,7 @@ constructor(){
 /////////////// */}
         <div id="aboutme">
             <About />
-        <i classname="fas fa-code-branch"/>
-        <i className="fab fa-js" />
-        <i className="fab fa-github" />
-        <i className="fab fa-react" />
-        <i className="fas fa-code"/>
+     
         </div>
        
       

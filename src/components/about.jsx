@@ -4,18 +4,41 @@ import styled from "styled-components";
 
 
 const Aboutme = styled.div`
-// background: linear-gradient(rgb(56,89,114), rgb(0, 0, 0));
+margin-top:70px;
+
 color: white;
-  font-size: 48px;
-  clear: both;
-  h4  {
+font-size: 48px;
+clear: both;
+
+
+.icons{
+    display: flex;
+    justify-content: space-between;
+    font-size: 35px;
+}
+
+.fa-linkedin-in {
+    background: #007bb5;
+}
+
+.fa-react{
+background:black;
+color:aqua; 
+}
+.fa-js {
+    border 4px solid black;
+    border-radius: 5px;
+    color: #89d32a;
+}
+
+
+h4  {
     text-align: center;
     font-size: 48px;
 }
 h5 {
     font-size: 28px;
     text-align: center;
-
 }
 img {
     display: block;
@@ -46,6 +69,14 @@ class AboutMe extends Component {
                 <img src="https://i.imgur.com/ItnSLBas.jpg" alt="pictureofme"/>
                 <h4>Tory Redner</h4>
                 <h5>Web Developer</h5>
+                <div className="icons">
+                <i className="fab fa-linkedin-in"/>
+                <i className="fas fa-code-branch"/>
+                <i className="fab fa-js" />
+                <i className="fab fa-github" />
+                <i className="fab fa-react" />
+                <i className="fas fa-code"/>
+                </div>
                 <h5>I grew up with a facination and love of computers, I can still remember the first computer that I had was a 386.<br/>
                  My dad would bring them home from his job broken or in desperate need of repair, It was then that I learned about the 30+ A disk that you needed to install windows 95.
                  Fast forward some years and while I still had a love of all things tech, I decided to pursue my career as a chef and Attened Johnson & Wales University. I had a passion for cooking
