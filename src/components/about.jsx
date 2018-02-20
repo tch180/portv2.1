@@ -7,7 +7,7 @@ const Aboutme = styled.div`
 margin-top:70px;
 
 color: white;
-font-size: 48px;
+font-size: 28px;
 clear: both;
 
 

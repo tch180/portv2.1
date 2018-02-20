@@ -15,7 +15,7 @@ class carousel extends Component {
 
 {/* <Carouseldiv> */}
               
-                <div id="projectcarousel" className="carousel slide" data-ride="carousel" data-interval="3500"  >
+                <div id="projectcarousel" className="carousel slide" data-ride="carousel" data-interval="5500"  >
  {/* <!-- Indicators --> */}
   <ol className="carousel-indicators">
     <li data-target="#projectcarousel" data-slide-to="0" className="active"></li>

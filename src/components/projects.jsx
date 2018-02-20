@@ -33,7 +33,7 @@ color: white;
   }
  #projectDesc{
    
-    justify-content: space-around;
+    justify-content: space-between;
     display: flex;
     margin-bottom: 25px;
    
@@ -72,7 +72,7 @@ class projects extends Component {
                     <img src="https://i.imgur.com/a4m9H96.png" alt="..." />
                     <div className="caption">
                       <h3>Vagabond Travel - Group Project</h3>
-                      <h6>Mern Stack </h6>
+                      <h6>MERN Stack </h6>
                       <h5>Project Length: 4 Days</h5>
                       <p>This was our first group project, The groups consisted of 4
                                   people. We worked in mob & pair programming.This Application
