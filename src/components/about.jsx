@@ -7,7 +7,7 @@ const Aboutme = styled.div`
 margin-top:70px;
 
 color: white;
-font-size: 28px;
+font-size: 18px;
 clear: both;
 
 
@@ -35,15 +35,16 @@ color:aqua;
 h4  {
     text-align: center;
     font-size: 48px;
+    color:darkslategrey;
 }
 h5 {
-    font-size: 28px;
+    font-size: 18px;
     text-align: center;
 }
 img {
     display: block;
     margin: 0 auto;
-    border: 5px solid white; 
+    border: 5px solid #36556e; 
     border-radius: 15px;
 }
 
