@@ -31,10 +31,10 @@ const ToTopButton = styled.div`
 const HomePageStlye = styled.div`
 background: linear-gradient(rgb(56,89,114), rgb(0, 0, 0));
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 768px) {
   /* For mobile phones: */
   [class*="col-md"] {
-      // width: 100%;
+      width: 100%;
 
       .col-1 {width: 8.33%;}
   .col-2 {width: 16.66%;}

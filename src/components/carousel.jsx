@@ -1,22 +1,4 @@
 import React, { Component } from 'react';
-// import styled from "styled-components";
-
-
-
-
-
-// const Carouseldiv=styled.div`
-
-// // padding-bottom: 25px;
-// // padding-top: 25px;
-// // padding-right: 10px;
-// // padding-left: 10px;
-// // background-color: black;
-
-// // .style{
-// //   background-color: black;
-// // }
-
 
 // `
 class carousel extends Component {
