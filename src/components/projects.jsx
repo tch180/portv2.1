@@ -25,6 +25,7 @@ color: white;
       // width: 30;
       margin:auto;
       background-color: black;
+      margin-top:30px;
 
     }
     .thumbnail .caption {
@@ -78,13 +79,9 @@ class projects extends Component {
                                   people. We worked in mob & pair programming.This Application
                     allows the user to post reviews to each city,<br /> it allows
                     images to be uploaded and has vaildation.</p>
-                    <div id="projectDesc">
-                    <img src="https://i.imgur.com/VFzLKpXt.png" alt=""/>
-                    <img src="https://i.imgur.com/xAjKvjCt.png" alt=""/>
-                    <img src="https://i.imgur.com/vrGXcCut.png" alt=""/>
-                    </div>
+                  
                     
-                      <p><a href="https://github.com/tch180/vagabond-project-" className="btn btn-primary" role="button">Github</a> <a href="https://wdi12-vagabond-travel.herokuapp.com/" className="btn btn-success" role="button">Demo</a></p>
+                      <p><a href="https://github.com/tch180/vagabond-project-" className="btn btn-primary" role="button" target="_blank" rel="noopener noreferrer" >Github</a> <a href="https://wdi12-vagabond-travel.herokuapp.com/" className="btn btn-success" role="button" target="_blank" rel="noopener noreferrer" >Demo</a></p>
                     </div>
                   </div>
                 </div>
@@ -106,12 +103,8 @@ class projects extends Component {
                  </p>
                 
 
-                    <div id="projectDesc">
-                    <img src="https://i.imgur.com/RdrLkZtt.png" alt=""/>
-                    <img src="https://i.imgur.com/5MMTB4It.png" alt=""/>
-                    <img src="https://i.imgur.com/Q0MI6LLt.png" alt=""/>
-                    </div>
-                      <p><a href="https://github.com/tch180/bigstar-chores" className="btn btn-primary" role="button">Github</a> <a href="https://bigstar-chores.herokuapp.com/" className="btn btn-success" role="button">Demo</a></p>
+                   
+                      <p><a href="https://github.com/tch180/bigstar-chores" target="_blank" rel="noopener noreferrer" className="btn btn-primary" role="button">Github</a> <a href="https://bigstar-chores.herokuapp.com/" target="_blank" rel="noopener noreferrer" className="btn btn-success" role="button">Demo</a></p>
                     </div>
                   </div>
                 </div>
@@ -133,12 +126,8 @@ class projects extends Component {
                 when ever you wanted. birthdays partys Small - Medium size
                 catering.  </p>
 
-                <div id="projectDesc">
-                    <img src="https://i.imgur.com/Wrpejett.png" alt=""/>
-                    <img src="https://i.imgur.com/smj30UPt.png" alt=""/>
-                    <img src="https://i.imgur.com/dY4NoOot.png" alt=""/>
-                    </div>
-                      <p><a href="https://github.com/tch180/Project-3" className="btn btn-primary" role="button">Github</a> <a href="https://second-chefs.herokuapp.com/" className="btn btn-success" role="button">Demo</a></p>
+               
+                      <p><a href="https://github.com/tch180/Project-3" target="_blank" rel="noopener noreferrer" className="btn btn-primary" role="button">Github</a> <a href="https://second-chefs.herokuapp.com/" target="_blank" rel="noopener noreferrer" className="btn btn-success" role="button">Demo</a></p>
                     </div>
                   </div>
                 </div>
@@ -146,8 +135,58 @@ class projects extends Component {
 
 
           </div>
-        </div>
 
+          
+
+
+
+        </div>
+        <div className="col-md-4">
+                  <div className="thumbnail">
+                    <img src="https://i.imgur.com/64GXK88.png" alt="..." />
+                    <div className="caption">
+                      <h3>Midway Injury Clinic</h3>
+                      <h6>HTML, CSS, JS </h6>
+                      <h5>Client</h5>
+                      <p>Basic website for a Injury clinic. </p>
+                  
+                    
+                      <p><a href="https://www.midwayinjuryclinic.com" target="_blank" rel="noopener noreferrer"  className="btn btn-success" role="button">Demo</a></p>
+                    </div>
+                  </div>
+                </div>
+
+
+
+       <div className="col-md-4">
+                  <div className="thumbnail">
+                    <img src="https://i.imgur.com/w5qsdes.jpg?1" alt="..." />
+                    <div className="caption">
+                      <h3>Best Chef </h3>
+                      <h6>MEN Stack </h6>
+                      <h5>Project Length: 5 days</h5>
+                      <p>Recipe Management program. allows users to add new recipes, and view current recipes.  </p>
+                  
+                    
+                      <p><a href="https://github.com/tch180/-BestChef-Project2" target="_blank" rel="noopener noreferrer" className="btn btn-primary" role="button">Github</a> <a href="https://warm-plateau-58242.herokuapp.com/" target="_blank" rel="noopener noreferrer" className="btn btn-success" role="button">Demo</a></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-md-4">
+                  <div className="thumbnail">
+                    <img src="https://i.imgur.com/Gi8zlBP.png" alt="..." />
+                    <div className="caption">
+                      <h3>StarTrek Jeopardy </h3>
+                      <h6> HTML5, CSS3, JavaScript,JQuery</h6>
+                      <h5>Project Length: 5 days</h5>
+                      <p>A StarTrek based Jeopardy game. </p>
+                  
+                    
+                      <p><a href="https://github.com/tch180/project1" target="_blank" rel="noopener noreferrer" className="btn btn-primary" role="button">Github</a> <a href="http://typist-barometers-60255.bitballoon.com/" target="_blank" rel="noopener noreferrer" className="btn btn-success" role="button">Demo</a></p>
+                    </div>
+                  </div>
+                </div>
         </ProjectSection>
 
           </div>

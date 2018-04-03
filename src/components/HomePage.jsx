@@ -75,6 +75,10 @@ const NavbarDiv = styled.div`
 font-family: font-awesome;
 font-size: 25px;
 background: linear-gradient(rgb(56,89,114), rgb(0, 0, 0));
+
+.modal-content{
+  text-align:center;
+}
 a:link {
   text-decoration:none;
   font-weight: bold;
@@ -128,6 +132,10 @@ h4 {
    from {width: 0;}
    
 }
+ol{
+  color: #337ab7;
+  font-weight:bold;
+}
 
 `;
 
@@ -141,6 +149,10 @@ constructor(){
   };
 }
 
+
+componentDidMount() {
+  this.backToTopButton()
+}
 
 
    backToTopButton = async () => {
@@ -159,89 +171,87 @@ constructor(){
 
 
   render() {
-    return (
-
-
-
-
-
-
-  <div>
-
-     {/* ///////////////
+    return <div>
+        {/* ///////////////
         //Navbar
         /////////////// */}
 
-
-
-
         <HomePageStlye>
-        <div>
-          <NavbarDiv>
-            <div className="Navbar">
-              <nav className="navbar navbar-default">
-                <div className="container-fluid">
-                  <div className="navbar-header ">
-                    {/* <img src="" alt="BrandLogo" /> */}
-                    {/* <a className="navbar-brand" href="/HomePage" /> */}
-                  </div>
-                  <h1>Tory Redner </h1>
-                  <h6>{Time}</h6>
-                  <ul>
-                    <Link to="/HomePage#projects"> <ol>Projects</ol></Link>
-                    <ol>Resume</ol>
-                    <Link to="/HomePage#aboutme">  <ol>About </ol></Link>
-                    
-                  </ul>
-                  <h4>
-                    "The average person puts only 25% of his energy into his
-                    work.<br />
-                    The world takes off its hat to those who put in more than
-                    50% of their capacity,and<br />
-                    stands on its head for those few and far between souls who
-                    devote 100%. —Andrew Carnegie"
-                  </h4>
-                </div>
-              </nav>
-            </div>
-          </NavbarDiv>
-        </div>
+          <div>
+            <NavbarDiv>
+              <div className="Navbar">
+                <nav className="navbar navbar-default">
+                  <div className="container-fluid">
+                    <div className="navbar-header ">
+                      {/* <img src="" alt="BrandLogo" /> */}
+                      {/* <a className="navbar-brand" href="/HomePage" /> */}
+                    </div>
+                    <h1>Tory Redner </h1>
+                    <h6>{Time}</h6>
+                    <ul>
+                      <Link to="/HomePage#projects">
+                        {" "}
+                        <ol>Projects</ol>
+                      </Link>
 
-{/*///////////////
+                      <div className="modal fade resume" tabIndex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                        <div className="modal-dialog modal-lg" role="document">
+                          <div className="modal-content">
+                            <embed title="resume" src="https://onedrive.live.com/embed?cid=8F73AED122F90D67&resid=8F73AED122F90D67%212608&authkey=AH16BWkHJGvtgU0&em=2&wdStartOn=0" width="500px" height="500px" frameBorder="0"></embed>
+                          </div>
+                        </div>
+                      </div>
+
+                      <ol data-toggle="modal" data-target=".resume">
+                     <Link to="">   Resume</Link>
+                      </ol>
+
+                      <Link to="/HomePage#aboutme">
+                        {" "}
+                        <ol>About </ol>
+                      </Link>
+                    </ul>
+                    <h4>
+                      "The average person puts only 25% of his energy into his work.<br />
+                      The world takes off its hat to those who put in more than 50% of their capacity,and<br />
+                      stands on its head for those few and far between souls who devote 100%. —Andrew Carnegie"
+                    </h4>
+                  </div>
+                </nav>
+              </div>
+            </NavbarDiv>
+          </div>
+
+          {/*///////////////
 //Projects 
 ///////////////*/}
 
-        <section className="carousel">
-          <Carousel />
-        </section>
+          <section className="carousel">{/* <Carousel /> */}</section>
 
-        <section>
-          <div id="projects"> 
-            {/* <ProjectSection1Div> */}
+          <section>
+            <div id="projects">
+              {/* <ProjectSection1Div> */}
               <Projects />
-            {/* </ProjectSection1Div> */}
-          </div>
-        </section>
+              {/* </ProjectSection1Div> */}
+            </div>
+          </section>
 
-{/* ///////////////
+          {/* ///////////////
 //About 
 /////////////// */}
-        <div id="aboutme">
+          <div id="aboutme">
             <About />
-     
-        </div>
-       
-      
-        <ToTopButton>
-        <button className="ToTopButton btn-success btn-sm  " onClick={this.backToTopButton}  ><span><i className="fas fa-angle-double-up"></i></span></button> 
-        </ToTopButton>
+          </div>
 
-
-
-
+          <ToTopButton>
+            <button className="ToTopButton btn-success btn-sm  " onClick={this.backToTopButton}>
+              <span>
+                <i className="fas fa-angle-double-up" />
+              </span>
+            </button>
+          </ToTopButton>
         </HomePageStlye>
-      </div>
-    );
+      </div>;
   }
 }
 
