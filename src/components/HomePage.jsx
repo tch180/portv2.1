@@ -208,7 +208,7 @@ componentDidMount() {
                       </ol>
 
                       <Link to="/HomePage#aboutme">
-                        {" "}
+                        
                         <ol>About </ol>
                       </Link>
                     </ul>
