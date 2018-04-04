@@ -185,14 +185,13 @@ componentDidMount() {
                 <nav className="navbar navbar-default">
                   <div className="container-fluid">
                     <div className="navbar-header ">
-                      {/* <img src="" alt="BrandLogo" /> */}
-                      {/* <a className="navbar-brand" href="/HomePage" /> */}
+                    
                     </div>
                     <h1>Tory Redner </h1>
                     <h6>{Time}</h6>
                     <ul>
                       <Link to="/HomePage#projects">
-                        {" "}
+                        
                         <ol>Projects</ol>
                       </Link>
 
