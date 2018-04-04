@@ -204,7 +204,7 @@ componentDidMount() {
                       </div>
 
                       <ol data-toggle="modal" data-target=".resume">
-                     <Link to="">   Resume</Link>
+                     <Link to="">Resume</Link>
                       </ol>
 
                       <Link to="/HomePage#aboutme">
@@ -227,11 +227,9 @@ componentDidMount() {
 //Projects 
 ///////////////*/}
 
-          <section className="carousel">{/* <Carousel /> */}</section>
-
-          <section>
+   
             <div id="projects">
-              
+            
               <Projects />
             </div>
           </section>
